@@ -1,27 +1,20 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
  import Home from "./pages/Home.jsx";
 import Offers from './pages/Offers.jsx';
 import SignIn from './pages/SignIn.jsx';
 import SignUp from './pages/SignUp.jsx';
  import Profile from './pages/Profile.jsx';
 import ForgotPassword from './pages/ForgotPassword.jsx';
+import Header from './components/Header.jsx';
+import { REALTOR_LOGO } from './constants/index.js';
 
 
 function App() {
  
   return (
     <>
-    <nav>
-      <ul className='flex justify-between'>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/offers">Offers</Link></li>
-        <li><Link to="/signin">signin</Link></li>
-        <li><Link to="/signup">signup</Link></li>
-        <li><Link to="/profile">profile</Link></li>
-        <li><Link to="/forgotpasssword">forgotpasssword</Link></li> 
-       
-      </ul>
-    </nav>
+    <Header />
+    
     <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/offers" element={<Offers />} />

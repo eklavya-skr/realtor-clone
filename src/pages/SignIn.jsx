@@ -2,8 +2,10 @@ import React from 'react'
 
 const SignIn = () => {
   return (
-    <div>SignIn</div>
+    <div>
+      <button className='bg-red-600 rounded-lg text-gray-950'>Sign In</button>
+      </div>
   )
 }
 
-export default SignIn
+export default SignIn 

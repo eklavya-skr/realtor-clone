@@ -1,0 +1,1 @@
+export const REALTOR_LOGO="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg";
